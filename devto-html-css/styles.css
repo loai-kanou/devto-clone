@@ -1,0 +1,89 @@
+/* DEVTO CSS */
+body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background-color: #e5e7eb;
+}
+/* HEADER */
+.customer-header {
+  display: grid;
+  grid-template-columns: 64px 1fr 2fr;
+  align-items: center;
+}
+
+.custom-header__right {
+  display: grid;
+  justify-content: right;
+  grid-template-columns: max-content max-content;
+}
+/* END HEADER */
+
+/* MAIN BODY */
+.custom-main {
+  display: grid;
+  grid-template-columns: 240px 2fr 320px;
+  grid-gap: 1rem;
+}
+
+/* LEFT MENU */
+.left-menu__link {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+}
+/* END LEFT MENU */
+
+/* BODY */
+.body__title {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.active {
+  position: relative;
+}
+
+.active:after {
+  content: "";
+  left: 8px;
+  height: 3px;
+  background: blue;
+  right: 8px;
+  position: absolute;
+  bottom: 0;
+}
+
+.post-author {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-gap: 8px;
+}
+
+.post-reaction {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.post-reaction__left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.post-reaction__right {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: right;
+  align-items: center;
+  grid-gap: 8px;
+}
+
+/* END BODY */
+
+/* LISTINGS */
+.listings__title {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+}
+/* END LISTTINGS */
+
+/* END MAIN BODY */
